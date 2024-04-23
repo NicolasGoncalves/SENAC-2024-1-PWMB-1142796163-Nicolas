@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - Analisador de Números</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section class="sec1">
+        <div class="numero">
+            <label for="numero">informe um numero (Entre 1 e 100): </label>
+            <input type="number" name="numero" id="num" min="1" max="100">
+        </div>
+        <button class="but" onclick="adicionar()">Adicionar</button>
+        <div class="numeros">
+            <textarea name="nuns" id="nuns" cols="30" rows="13"></textarea>
+        </div>
+        <div >
+            <button class="but" onclick="calcular()">Finalizar</button>
+        </div>
+    </section>
+    <section class="result">
+        <div class="resultado">
+            <p>Ao todo, temos <span id="total">0</span> elementos cadastrados </p>
+            <p>O maior valor informado foi <span id="maior">0</span> </p>
+            <p>O menor valor informado foi <span id="menor">0</span></p>
+            <p>A soma dos valores é <span id="soma">0</span></p>
+            <p>A media dos valores é <span id="media">0</span></p>
+        </div>
+    </section>
+    
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
